@@ -1,4 +1,3 @@
-# Kalasphere-technologies
 # Welcome to My Portfolio
 This repository contains the code for my personal portfolio website. It showcases my skills, education, experience, and projects in the field of web development.
 ## About Me
