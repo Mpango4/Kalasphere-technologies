@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="asset/index.css">
+  
+</head>
+<body style="margin: 0;">
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#" onclick="skill()">Skills</a>
+            <a href="#" onclick="education()">Education</a>
+            <a href="#" onclick="experience()">Experience</a>
+            <a href="#" onclick="project()">Projects</a>
+        </nav>
+    </header>
+
+    <section style="background-color: rgba(242, 246, 250, 0.7); color: rgb(10, 10, 10); margin-top: 100px;">
+        <h2>About Me</h2>
+        <p>Hello, I'm <span style="color: blue; font-style: oblique; font-weight:bolder; color: rgb(7, 100, 43);">[ELLY GERADY]</span>. <br><br>I am a web developer with expertise in HTML, CSS, and JavaScript. <br><br>
+            Explore my projects and experience a journey through the world of web development.</p>
+        <p>I am passionate about creating websites that are both beautiful and functional.</p>
+        <p style="color: green; font-weight:bold ; font-style: italic;">you can navigate to the link above to view my Skills, Education, experiences, and project that i have already Implemented</p>
+    </section>
+
+    <section id="Skills" style="display: none;">
+        <button onclick="hideSkills()" style="float: right;">close</button>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Web Design</li>
+            <li>Front-end Frameworks (e.g., Bootstrap)</li>
+            <li>Back-end Development (e.g., PHP)</li>
+            <li>Database Management (e.g., MySql & SQLite)</li>
+            <li>API Integration</li>
+            <li>Animation Development (e.g Blender)</li>
+        </ul>
+    </section>
+
+    <section id="educations" style="display: none;">
+        <button onclick="hideEducation()" style="float: right;">close</button>
+        <h2>Education</h2>
+        <p>Oldinary Diploma in Information Technologies <br> <br>
+        Institute Name Dar es salaam institute of Technology <br> <br>Graduation Year 2024</p>
+    </section>
+
+    <section id="experiences" style="display: none;">
+        <button onclick="hideExperience()" style="float: right;">close</button>
+        <h2>Experience</h2>
+        <p>Web Developer |Company Name: KalaSphere Technologies|Started date: 14 nov 2023| -| End Date: 14 nov 2044</p>
+        <ul>
+            <li>Developed and maintained front-end and back-end of company websites.</li>
+            <li>Collaborated with cross-functional teams to achieve project goals.</li>
+            <li>Implemented responsive design principles to ensure a seamless user experience across devices.</li>
+        </ul>
+    </section>
+
+    <section id="projects" style="display: none;">
+        <button onclick="hide()" style="float: right;">close</button>
+        <h2>Projects</h2>
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Technologies Used</th>
+            </tr>
+            <tr>
+                <td>KTC LAB System</td>
+                <td>the system aimed in managing lab, computers, users, and lab resouses</td>
+                <td>HTML, CSS, JavaScript & PHP</td>
+            </tr>
+            <tr>
+                <td>online market place for local artistian</td>
+                <td>the project aimed to empower handcraft man to sell their Skills.</td>
+                <td>Bootstrap, JavaScript,MySql Larevel PHP</td>
+            </tr>
+            <tr>
+                <td>KalaUmeme System</td>
+                <td>the project aimed to improve availability of electrical technician every where</td>
+                <td>Bootstrap,MySql Larevel PHP</td>
+            </tr>
+            <!-- Add more rows for additional projects -->
+        </table>
+    </section>
+    
+    <footer>
+    <div style="float: left;">
+        <h1>social media</h1>
+        <div class="WhatsApp-Logo">
+            <a href="http://wa.me/+255625107804"><img src="WhatsAppLogo.jpg" alt="WhatsApp"></a>
+        </div>
+        <div class="WhatsApp-Logo">
+            <a href="http://github.com/Mpango4"><img src="github.jpg" alt="github"></a>
+        </div>
+        <div class="WhatsApp-Logo">
+            <a href="http://www.youtube.com/@Mpangosogo"><img src="youtube.jpg" alt="youtube"></a>
+        </div>
+    </div> 
+        <div class="comment-form-container" id="form" style="display: none;">
+            <h4>Please leave your comment</h4>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="e.g., abc@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" placeholder="Type your comment here...." required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <h2>Contact me</h2>
+        <p>If you have any questions or need more information, please feel free to contact me:</p>
+        <button class="contact" onclick="show()">View My Contact Details</button>
+        <button onclick="display()">leave comment</button>
+        <div class="display" style="display: none;" id="display">
+            <address>
+                Email: <a href="mailto:mpangosogo0102@gmail.com">mpangosogo0102@gmail.com</a><br>
+                Phone: <a href="tel:+255746418410">+255746418410</a>
+
+            </address>
+            <p>&copy; 2023 KalaSphere Technologies. All rights reserved.</p>
+            <p>Powered by Mpango</p>
+        </div>
+    </footer>
+
+    <script src="asset/index.js"></script>
+   </body>
+</html>
